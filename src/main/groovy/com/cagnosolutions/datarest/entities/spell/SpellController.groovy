@@ -24,6 +24,8 @@ class SpellController {
 		spellService.findAll()
 	}
 
+
+	@RequestMapping(value = "/order", method = RequestMethod.GET)
 	List findAllOrganized() {
 		spellService.findAllOrganized()
 	}
