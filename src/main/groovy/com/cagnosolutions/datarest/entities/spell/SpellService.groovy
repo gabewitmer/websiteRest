@@ -15,6 +15,14 @@ class SpellService {
 	List<Spell> findAll() {
 		repo.findAll()
 	}
+
+	List findAllOrganized() {
+		List[] l = new ArrayList<Spell>[10]
+		def allSpells = repo.findAll();
+		allSpells.each { spell ->
+			l[spell.level].add(spell)
+		}
+	}
 	
 	Spell findOne(Integer id) {
 		repo.findOne(id)

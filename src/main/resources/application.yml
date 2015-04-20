@@ -2,7 +2,7 @@ spring:
 
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test_rest?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/website_rest?createDatabaseIfNotExist=true
     username: root
     password: root
     maxActive: 10

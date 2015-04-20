@@ -23,6 +23,10 @@ class SpellController {
 	List<Spell> findAllSpells() {
 		spellService.findAll()
 	}
+
+	List findAllOrganized() {
+		spellService.findAllOrganized()
+	}
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	Spell findOneSpell(@PathVariable Integer id) {
@@ -31,6 +35,7 @@ class SpellController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	Spell addSpell(@RequestBody Spell spell) {
+		println spell
 		spellService.save(spell)
 	}
 

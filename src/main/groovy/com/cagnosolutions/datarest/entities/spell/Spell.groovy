@@ -15,5 +15,8 @@ class Spell {
 	@Id
 	@GeneratedValue
 	Integer id
-	String name, school, spellType, components, level, castingTime, spellRange, spellTarget, spellDuration, description, savingThrow, spellResistance, aoe
+
+	Integer level
+	String name, school, spellType, components, castingTime, spellRange, spellTarget, spellDuration, description, savingThrow, spellResistance, aoe
+
 }
