@@ -22,6 +22,7 @@ class SpellService {
 		allSpells.each { spell ->
 			l[spell.level].add(spell)
 		}
+		l
 	}
 	
 	Spell findOne(Integer id) {

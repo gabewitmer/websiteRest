@@ -2,6 +2,7 @@ package com.cagnosolutions.datarest.entities.spell
 
 import groovy.transform.CompileStatic
 
+import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
@@ -17,6 +18,8 @@ class Spell {
 	Integer id
 
 	Integer level
-	String name, school, spellType, components, castingTime, spellRange, spellTarget, spellDuration, description, savingThrow, spellResistance, aoe
+	@Column(length = 10000)
+	String description
+	String name, school, spellType, components, castingTime, spellRange, spellTarget, spellDuration, savingThrow, spellResistance, aoe
 
 }
