@@ -16,11 +16,18 @@ class SpellService {
 		repo.findAll()
 	}
 
-	List findAllOrganized() {
-		List[] l = new ArrayList<Spell>[10]
+	List<List<Spell>> findAllOrganized() {
+		def l = new ArrayList<List>(10)
 		def allSpells = repo.findAll();
-		allSpells.each { spell ->
-			l[spell.level].add(spell)
+		allSpells.each { Spell spell ->
+			//l.add(spell.level, (l.get(spell.level).size() > 0) ? l.get(spell.level).add(spell) : new ArrayList<Spell>(){{
+			//	add(spell)
+			//}} as List)
+
+			(l.get(spell.level).size() > 0) ? l.get(spell.level).add(spell) : l.add(spell.level, new ArrayList<Spell>(){{
+				add(spell)
+			}} as List)
+
 		}
 		l
 	}
