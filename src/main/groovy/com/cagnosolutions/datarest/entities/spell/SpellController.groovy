@@ -37,7 +37,6 @@ class SpellController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	Spell addSpell(@RequestBody Spell spell) {
-		println spell
 		spellService.save(spell)
 	}
 
