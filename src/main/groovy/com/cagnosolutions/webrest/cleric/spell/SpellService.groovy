@@ -1,4 +1,4 @@
-package com.cagnosolutions.datarest.entities.spell
+package com.cagnosolutions.webrest.cleric.spell
 
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired

@@ -1,4 +1,4 @@
-package com.cagnosolutions.datarest.entities.spell
+package com.cagnosolutions.webrest.cleric.spell
 
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired
@@ -36,11 +36,6 @@ class SpellController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	Spell addSpell(@RequestBody Spell spell) {
-		spellService.save(spell)
-	}
-
-	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
-	Spell saveSpell(@RequestBody Spell spell) {
 		spellService.save(spell)
 	}
 	

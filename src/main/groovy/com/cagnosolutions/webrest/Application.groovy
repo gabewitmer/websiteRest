@@ -1,4 +1,4 @@
-package com.cagnosolutions.datarest
+package com.cagnosolutions.webrest
 
 import groovy.transform.CompileStatic
 import org.springframework.boot.SpringApplication

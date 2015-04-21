@@ -15,7 +15,7 @@ apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'testRest'
+    baseName = 'webrest'
     version =  '1.0'
 }
 

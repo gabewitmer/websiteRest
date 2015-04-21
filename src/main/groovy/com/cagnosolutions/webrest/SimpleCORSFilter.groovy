@@ -1,4 +1,4 @@
-package com.cagnosolutions.datarest
+package com.cagnosolutions.webrest
 
 import org.springframework.stereotype.Component
 

@@ -1,4 +1,4 @@
-package com.cagnosolutions.datarest.entities.spell
+package com.cagnosolutions.webrest.groupSpells.spellBuddy
 
 import groovy.transform.CompileStatic
 
@@ -12,12 +12,14 @@ import javax.persistence.Id
  */
 @CompileStatic
 @Entity
-class Spell {
+class SpellBuddy {
 	@Id
 	@GeneratedValue
 	Integer id
+
+	Integer userId
 	@Column(length = 10000)
 	String description
-	String name, school, spellType, components, level, castingTime, spellRange, spellTarget, spellDuration, savingThrow, spellResistance, aoe
+	String name, school, spellType, components, effect, level, castingTime, spellRange, spellTarget, spellDuration, savingThrow, spellResistance, area
 
 }
