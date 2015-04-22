@@ -16,8 +16,8 @@ class SpellBuddyService {
 		repo.findAllByUser(userId)
 	}
 
-	Map<String, List<SpellBuddy>> findAllOrganizedByUser(Integer userId) {
-		def spellMap = new TreeMap<String, List<SpellBuddy>>()
+	Map<Integer, List<SpellBuddy>> findAllOrganizedByUser(Integer userId) {
+		def spellMap = new TreeMap<Integer, List<SpellBuddy>>()
 		def allSpells = repo.findAllByUser(userId);
 		allSpells.each { SpellBuddy spellBuddy ->
 			spellMap.containsKey(spellBuddy.level) ? spellMap.get(spellBuddy.level).add(spellBuddy) : spellMap.put(spellBuddy.level, new ArrayList<SpellBuddy>(){{

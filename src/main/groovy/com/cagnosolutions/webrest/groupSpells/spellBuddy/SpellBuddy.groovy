@@ -20,6 +20,7 @@ class SpellBuddy {
 	Integer userId
 	@Column(length = 10000)
 	String description
-	String name, school, spellType, components, effect, level, castingTime, spellRange, spellTarget, spellDuration, savingThrow, spellResistance, area
+	Integer level
+	String name, school, spellType, components, effect, castingTime, spellRange, spellTarget, spellDuration, savingThrow, spellResistance, area
 
 }

@@ -4,10 +4,6 @@ import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
-/**
- * Created by greg on 2/12/15.
- */
-
 @CompileStatic
 @Service
 class UserService {
