@@ -9,5 +9,5 @@ import org.springframework.data.repository.query.Param
 interface SpellBuddyRepository extends JpaRepository<SpellBuddy, Integer> {
 
 	@Query("SELECT s FROM SpellBuddy s WHERE s.userId=:userId")
-	List<SpellBuddy> findAllByUser(@Param("userId") Integer ussrId)
+	List<SpellBuddy> findAllByUser(@Param("userId") Integer userId)
 }
