@@ -1,4 +1,4 @@
-package com.cagnosolutions.webrest.groupSpells.dndSpell
+package com.cagnosolutions.webrest.groupSpells.sb
 
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired
@@ -6,23 +6,23 @@ import org.springframework.stereotype.Service
 
 @CompileStatic
 @Service
-class DndSpellService {
-	
-	@Autowired
-	DndSpellRepository repo
+class SbSpellService {
 
-	List<DndSpell> findAllAlpha(String search) {
+	@Autowired
+	SbSpellRepository repo
+
+	List<SbDndSpell> findAllAlpha(String search) {
 		repo.findAllAlpha(search)
 	}
 
-	DndSpell findOne(Integer id) {
+	SbDndSpell findOne(Integer id) {
 		repo.findOne(id)
 	}
 
-	DndSpell save(DndSpell dndSpell) {
+	SbDndSpell save(SbDndSpell dndSpell) {
 		repo.save(dndSpell)
 	}
-	
+
 	def delete(Integer id) {
 		repo.delete(id)
 	}

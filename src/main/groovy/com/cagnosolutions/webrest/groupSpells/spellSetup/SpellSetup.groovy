@@ -1,5 +1,5 @@
 package com.cagnosolutions.webrest.groupSpells.spellSetup
-import com.cagnosolutions.webrest.groupSpells.dndSpell.DndSpell
+import com.cagnosolutions.webrest.temp.dndSpell.DndSpell
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
