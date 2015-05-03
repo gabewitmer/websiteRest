@@ -12,15 +12,11 @@ class SbDndSpell {
 	@GeneratedValue
 	Integer id
 
-
 	String school
-
 	String subschool
-
 	String rulebook
-	ArrayList<String> descriptors
+	String descriptors
 	Integer page
-
 	@Column(columnDefinition = "LONGTEXT")
 	String descriptionHtml
 	String name, castingTime, spellRange, target, effect, area, duration, savingThrow, spellResistance

@@ -19,6 +19,7 @@ class User {
 	String password
 	String role = "ROLE_USER"
 	Short active = 1
+	Boolean powerPoints
 	@Column(columnDefinition = "longblob")
 	HashMap<String, Integer> spellsPerDay
 

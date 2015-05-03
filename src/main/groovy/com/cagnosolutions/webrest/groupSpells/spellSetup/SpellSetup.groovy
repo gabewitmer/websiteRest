@@ -17,7 +17,6 @@ class SpellSetup {
 	Integer id
 
 	Integer userId
-	Integer known0, known1, known2, known3, known4, known5, known6, known7, known8, known9
 
 	@ManyToMany
 	List<DndSpell> picked0
