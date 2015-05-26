@@ -17,6 +17,7 @@ class Traditional {
 	Integer userId
 	ArrayList<Integer> knownSpells = new ArrayList<Integer>()
 	ArrayList<Integer> remainingSpells = new ArrayList<Integer>()
+	//ArrayList<ArrayList<Integer>> preparedSpells = new ArrayList<>()
 	ArrayList<Integer> prepared0 = new ArrayList<>()
 	ArrayList<Integer> prepared1 = new ArrayList<>()
 	ArrayList<Integer> prepared2 = new ArrayList<>()

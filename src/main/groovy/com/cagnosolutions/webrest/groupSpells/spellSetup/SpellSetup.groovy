@@ -1,5 +1,6 @@
 package com.cagnosolutions.webrest.groupSpells.spellSetup
-import com.cagnosolutions.webrest.temp.dndSpell.DndSpell
+
+import com.cagnosolutions.webrest.groupSpells.sb.SbDndSpell
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -19,24 +20,24 @@ class SpellSetup {
 	Integer userId
 
 	@ManyToMany
-	List<DndSpell> picked0
+	List<SbDndSpell> picked0
 	@ManyToMany
-	List<DndSpell> picked1
+	List<SbDndSpell> picked1
 	@ManyToMany
-	List<DndSpell> picked2
+	List<SbDndSpell> picked2
 	@ManyToMany
-	List<DndSpell> picked3
+	List<SbDndSpell> picked3
 	@ManyToMany
-	List<DndSpell> picked4
+	List<SbDndSpell> picked4
 	@ManyToMany
-	List<DndSpell> picked5
+	List<SbDndSpell> picked5
 	@ManyToMany
-	List<DndSpell> picked6
+	List<SbDndSpell> picked6
 	@ManyToMany
-	List<DndSpell> picked7
+	List<SbDndSpell> picked7
 	@ManyToMany
-	List<DndSpell> picked8
+	List<SbDndSpell> picked8
 	@ManyToMany
-	List<DndSpell> picked9
+	List<SbDndSpell> picked9
 
 }
